@@ -1,0 +1,4 @@
+cd portal-acesso
+npm init -y
+npm install vite --save-dev
+npm run dev

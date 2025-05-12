@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portal de Acesso</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Portal de Acesso</h2>
+      <form id="loginForm">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Senha</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password" required />
+          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+        <div id="password-strength" class="strength-indicator">Força da senha: -</div>
+        <div id="feedback" class="feedback"></div>
+        <button type="submit">Entrar</button>
+        <button type="button" onclick="forgotPassword()">Esqueci minha senha</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
